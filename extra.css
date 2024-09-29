@@ -1,0 +1,65 @@
+.flexbox {
+    display: flex; /* Enable flexbox */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Space between items */
+    padding-bottom: 50px;
+    padding-top: 20px;
+    /* Space between items */ /* Optional: add space between the image and text */
+}
+
+.left-image {
+    flex: 0 0 20%; /* Set the image to take up 20% of the flex container */
+    padding: 20px;
+    /* Smooth transition for the flex property */
+}
+
+.left-image img {
+    width: 100%; /* Scale the image to fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-box {
+    flex: 0 0 70%; /* Set the text box to take up 70% of the flex container */
+    padding-left: 40px;
+    padding: 10px; /* Optional padding */
+    position: relative; /* Adjust as necessary */
+    transition: transform 0.3s ease; /* Transition for the scale */
+    line-height: 1.5; /* Adjust line height as needed */
+}
+
+
+
+
+
+.text-box:hover {
+    transform: scale(1.025); 
+    opacity: 1;
+    }
+
+.clickable-flexbox {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.clickable-flexbox:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+ 
+
+    .text-box {
+        font-size: 7px;
+        padding-left: 10px;
+       
+    }
+
+    .left-image {
+        padding: 5px;
+    }
+
+}
+
+
